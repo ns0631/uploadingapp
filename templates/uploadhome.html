@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Welcome!</title>
+        <meta charset="UTF-8">
+    </head>
+    <body style="background-color:red; font-family:Palatino;">
+        <h1><center>This is a Flask Webpage for uploading text</center></h1>
+        <p>This web application allows you to upload text files. Once you have uploaded a text file, you may view and open your other uploads.</p>
+        <form method="POST" enctype="multipart/form-data" action="{{ url_for('upload') }}">
+            <input type="file" name="user_text_file" style="font-family: Palatino;">
+            <br><br><input type="submit">
+        </form>
+    </body>
+</html>

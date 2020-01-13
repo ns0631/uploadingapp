@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Thank you!</title>
+        <meta charset="UTF-8">
+    </head>
+    <body style="background-color:indianred; font-family:Palatino;">
+        {% for key, value in result.items() %}
+            <h1><center>{{ 'The contents of ' + key }}</center></h1>
+            <p><a>{{ value }}</a></p>
+        {% endfor %}
+        <h2><a href="http://localhost:5000/">Return to homepage</a></h2>
+    </body>
+</html>

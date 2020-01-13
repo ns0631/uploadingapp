@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Thank you!</title>
+        <meta charset="UTF-8">
+    </head>
+    <body style="background-color:orange; font-family:Palatino;">
+        <h1><center>Your uploads</center></h1>
+        <h2>Click on a file title to read the contents.</h2>
+        {% for key, value in result.items() %}
+            <form action="http://localhost:5000/open_upload" method="POST">
+                <br><input type="submit" name="requestedfile" value={{ value }}/><br>
+            </form>
+        {% endfor %}
+        <h2><a href="http://localhost:5000/">Return to homepage</a></h2>
+    </body>
+</html>
